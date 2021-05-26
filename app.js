@@ -4,6 +4,6 @@ const app = express()
 const db = require('./db');
 
 const ContentController = require('./ContentController');
-app.use('/api', ContentController);
+app.use('/', ContentController);
 
 module.exports = app

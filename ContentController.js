@@ -25,7 +25,7 @@ router.post('/create/content', (req, res) => {
 })
 
 // GET ALL CONTENT FROM DB
-router.get('/get', (req, res) => {
+router.get('/', (req, res) => {
     Content.find({}, (err, content) => {
         if (err) {
             return res.send("There was a problem in finding the contents.")
@@ -61,10 +61,10 @@ router.put('/update/:id', (req, res) => {
 router.delete('/del/:id', (req, res) => {
     Content.findByIdAndRemove(req.params.id, (err, content) => {
         if (err) {
-            return res.send("There was a problem deleting the content.");
+            return res.send("There was a problem deleting the content.")
         }
-        res.send("Content of author: '"+ content.author +"' having title: '"+ content.title +"' was deleted.");
-    });
-});
+        res.send("Content of author: '"+ content.author +"' having title: '"+ content.title +"' was deleted.")
+    })
+})
 
 module.exports = router;
