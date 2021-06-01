@@ -14,7 +14,7 @@ mongoose.connect(process.env.DATABASE, {
     useFindAndModify: false,
     useCreateIndex: true
 }).then(() => {
-    console.log("DB CONNECTED");
+    console.log("MongoDB Atlas CONNECTED");
 }).catch((err) => {
     console.log(err);
 })
