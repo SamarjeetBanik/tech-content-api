@@ -28,7 +28,7 @@ router.post('/create/content', (req, res) => {
 router.get('/', (req, res) => {
     Content.find({}, (err, content) => {
         if (err) {
-            return res.json("There was a problem in finding the contents.", err)
+            return res.json(err)
         }
         res.send(content)
     })
