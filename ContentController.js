@@ -67,4 +67,20 @@ router.delete('/del/:id', (req, res) => {
     })
 })
 
+// SEARCH A PARTICULAR AUTHOR FROM THE DATABASE (CASE-SENSITIVE)
+router.get("/search/:author", (req, res) => {
+    var regex = new RegExp(req.params.author)
+    Content.find({author: regex}).then((result) => {
+        res.status(200).json(result)
+    })
+})
+
+// SEARCH A PARTICULAR AUTHOR FROM THE DATABASE (CASE-INSENSITIVE)
+router.get("/search/any/:author", (req, res) => {
+    var regex = new RegExp(req.params.author, "i")
+    Content.find({author: regex}).then((result) => {
+        res.status(200).json(result)
+    })
+})
+
 module.exports = router;
