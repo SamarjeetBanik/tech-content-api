@@ -25,6 +25,10 @@ Know more on API: [What is an API?](https://www.mulesoft.com/resources/api/what-
   - `https://techcontentapi.herokuapp.com/update/:id`
 - DELETE
   - `https://techcontentapi.herokuapp.com/del/:id`
+- SEARCH (Based on 'Author'): CASE-SENSITIVE
+  - `https://techcontentapi.herokuapp.com/search/:author`
+- SEARCH (Based on 'Author'): CASE-INSENSITIVE
+  - `https://techcontentapi.herokuapp.com/search/any/:author`
   
 ## Project setup
 1. `git clone https://github.com/SamarjeetBanik/tech-content-api.git` or you can simply download the whole project in a zip folder.
