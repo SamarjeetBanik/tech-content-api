@@ -50,6 +50,6 @@ npm start
 - [Heroku: Cloud Application Platform](https://www.heroku.com/)
 
 #### Hope, you liked this project. Don't forget to 🌟 the repo, if you liked it.
-If you feel, anything can be better in this project, then you can just pull a request [here](https://github.com/SamarjeetBanik/github-users-finder/issues/new) or <a href="mailto:samarjeetbanik@gmail.com"><b>email</b></a> me.🙂
+If you feel, anything can be better in this project, then you can just pull a request [here](https://github.com/SamarjeetBanik/tech-content-api/issues/new) or <a href="mailto:samarjeetbanik@gmail.com"><b>email</b></a> me.🙂
 
 # Thank You!
